@@ -18,7 +18,7 @@ I'm a 15-year-old backend developer based in Israel, building a solid foundation
 
 **Languages:**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)  
-![go]("https://img.shields.io/badge/go-3776AB?style=flat&logo=go&logoColor=white")
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 
 **Frameworks & Libraries:**  
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)  
@@ -37,10 +37,11 @@ VS Code, GitHub, macOS
 
 ## 📂 Projects
 
-- 🎧 **Microbloging social network (in progress):**  
+- 🎧 **Microblogging social network (in progress):**  
   RESTful API, category trees with `django-mptt`, Redis cache, scalable structure.
-  📟 **CLI command parser module (in progress):**
-  Clear code structure, usefull, easy to build in your project
+
+- 📟 **CLI command parser module (in progress):**  
+  Clear code structure, useful, easy to build into your project.
 
 ---
 
@@ -49,8 +50,8 @@ VS Code, GitHub, macOS
 - Advanced database structures and indexing
 - Go backend development 
 - Go goroutines asynchronous work
-- Python Async programming with Celery & Redis 
-- - Low-level understanding of Django internals  
+- Python async programming with Celery & Redis 
+- Low-level understanding of Django internals  
 
 ---
 
