@@ -33,22 +33,11 @@ Celery, django-mptt
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)  
 VS Code, GitHub, macOS
 
----
-
-## 📂 Projects
-
-- 🎧 **Microblogging social network (in progress):**  
-  RESTful API, category trees with `django-mptt`, Redis cache, scalable structure.
-
-- 📟 **CLI command parser module (in progress):**  
-  Clear code structure, useful, easy to build into your project.
-
----
-
 ## 📈 Currently Improving
 
 - Advanced database structures and indexing
-- Go backend development 
+- Go backend development
+- Go CLI aplications development
 - Go goroutines asynchronous work
 - Python async programming with Celery & Redis 
 - Low-level understanding of Django internals  
