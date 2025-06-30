@@ -2,18 +2,6 @@
 
 I'm a 15-year-old backend developer based in Israel, building a solid foundation in backend technologies with a long-term goal of becoming a professional software engineer.
 
----
-
-## 🚀 My Focus
-
-- Clean architecture
-- Scalable RESTful APIs
-- Database design & optimization
-- Caching & background tasks
-- Team workflow and Git proficiency
-
----
-
 ## 🛠 Tech Stack
 
 **Languages:**  
@@ -32,17 +20,6 @@ Celery, django-mptt
 **Tools:**  
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)  
 VS Code, GitHub, macOS
-
-## 📈 Currently Improving
-
-- Advanced database structures and indexing
-- Go backend development
-- Go CLI aplications development
-- Go goroutines asynchronous work
-- Python async programming with Celery & Redis 
-- Low-level understanding of Django internals  
-
----
 
 ## 📬 Contact
 
