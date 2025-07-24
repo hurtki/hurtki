@@ -4,7 +4,7 @@
 
 ## 🚀 About Me
 
-I'm a 15-year-old student from Israel, exploring backend development and working on improving my skills with the goal of becoming a backend engineer.
+I'm a student from Israel, exploring backend development and working on improving my skills with the goal of becoming a backend engineer.
 
 ---
 
