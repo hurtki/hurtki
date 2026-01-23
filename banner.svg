@@ -1,0 +1,274 @@
+<svg
+        width="100%"
+        height="auto"
+        viewBox="0 0 900 220"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-labelledby="titleId"
+        style={{ maxWidth: "900px" }}
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <title id="titleId">GitHub Stats</title>
+
+        <defs>
+          {/* Neon glow gradient */}
+          <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#00ff88" />
+            <stop offset="50%" stopColor="#00ffff" />
+            <stop offset="100%" stopColor="#00ff88" />
+          </linearGradient>
+
+          {/* Glow filter */}
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+            <feMerge>
+              <feMergeNode in="coloredBlur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        {/* Background */}
+        <rect x="2" y="2" rx="8" height="216" width="896" fill="#0d1117" />
+
+        {/* Animated neon border - snake effect */}
+        <rect
+          x="2"
+          y="2"
+          rx="8"
+          height="216"
+          width="896"
+          fill="none"
+          stroke="url(#neonGradient)"
+          strokeWidth="2"
+          strokeDasharray="60 2180"
+          filter="url(#glow)"
+        >
+          <animate attributeName="stroke-dashoffset" values="0;-2240" dur="4s" repeatCount="indefinite" />
+        </rect>
+
+        {/* Secondary trail for smoother effect */}
+        <rect
+          x="2"
+          y="2"
+          rx="8"
+          height="216"
+          width="896"
+          fill="none"
+          stroke="url(#neonGradient)"
+          strokeWidth="2"
+          strokeDasharray="60 2180"
+          filter="url(#glow)"
+          opacity="0.5"
+        >
+          <animate attributeName="stroke-dashoffset" values="-560;-2800" dur="4s" repeatCount="indefinite" />
+        </rect>
+
+        {/* Static subtle border */}
+        <rect x="2" y="2" rx="8" height="216" width="896" fill="none" stroke="#30363d" strokeWidth="1" />
+
+        {/* Header with GitHub icon */}
+        <g transform="translate(24, 24)">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="#c9d1d9">
+            <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" />
+          </svg>
+          <text x="32" y="17" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="18" fontWeight="600">
+            developer_name
+          </text>
+          <text x="170" y="17" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="14">
+            Full-stack developer
+          </text>
+        </g>
+
+        {/* Stats Row */}
+        <g transform="translate(24, 55)">
+          {/* Stars - with mini sparkline */}
+          <g transform="translate(0, 0)">
+            <rect x="0" y="0" width="165" height="70" rx="8" fill="#161b22" stroke="#30363d" strokeWidth="1" />
+            {/* Glowing star icon */}
+            <g filter="url(#glow)">
+              <svg x="12" y="10" width="20" height="20" viewBox="0 0 16 16" fill="#e3b341">
+                <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z" />
+              </svg>
+            </g>
+            <text x="38" y="24" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              Total Stars
+            </text>
+            <text x="12" y="50" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="24" fontWeight="700">
+              1,247
+            </text>
+            {/* Trend arrow up */}
+            <g transform="translate(90, 38)">
+              <polygon points="0,8 4,0 8,8" fill="#3fb950" />
+              <text x="12" y="8" fill="#3fb950" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11" fontWeight="600">
+                +12%
+              </text>
+            </g>
+            {/* Mini sparkline */}
+            <polyline
+              points="12,62 30,58 48,64 66,55 84,60 102,52 120,56 138,48 153,54"
+              fill="none"
+              stroke="#e3b341"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              opacity="0.6"
+            />
+          </g>
+
+          {/* Commits - with circular progress */}
+          <g transform="translate(180, 0)">
+            <rect x="0" y="0" width="165" height="70" rx="8" fill="#161b22" stroke="#30363d" strokeWidth="1" />
+            {/* Circular progress ring */}
+            <circle cx="140" cy="35" r="22" fill="none" stroke="#21262d" strokeWidth="4" />
+            <circle
+              cx="140"
+              cy="35"
+              r="22"
+              fill="none"
+              stroke="#3fb950"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeDasharray="110"
+              strokeDashoffset="22"
+              transform="rotate(-90 140 35)"
+            />
+            <text x="140" y="39" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11" fontWeight="600" textAnchor="middle">
+              80%
+            </text>
+            <svg x="12" y="10" width="18" height="18" viewBox="0 0 16 16" fill="#3fb950">
+              <path d="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
+            </svg>
+            <text x="36" y="23" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              Commits (2025)
+            </text>
+            <text x="12" y="50" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="24" fontWeight="700">
+              3,842
+            </text>
+            <text x="12" y="64" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="10">
+              goal: 4,800
+            </text>
+          </g>
+
+          {/* PRs - with bar chart */}
+          <g transform="translate(360, 0)">
+            <rect x="0" y="0" width="165" height="70" rx="8" fill="#161b22" stroke="#30363d" strokeWidth="1" />
+            <svg x="12" y="10" width="18" height="18" viewBox="0 0 16 16" fill="#a371f7">
+              <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z" />
+            </svg>
+            <text x="36" y="23" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              Pull Requests
+            </text>
+            <text x="12" y="50" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="24" fontWeight="700">
+              284
+            </text>
+            {/* Mini bar chart for monthly PRs */}
+            <g transform="translate(90, 30)">
+              <rect x="0" y="25" width="8" height="10" rx="1" fill="#a371f7" opacity="0.4" />
+              <rect x="12" y="18" width="8" height="17" rx="1" fill="#a371f7" opacity="0.5" />
+              <rect x="24" y="12" width="8" height="23" rx="1" fill="#a371f7" opacity="0.6" />
+              <rect x="36" y="20" width="8" height="15" rx="1" fill="#a371f7" opacity="0.7" />
+              <rect x="48" y="5" width="8" height="30" rx="1" fill="#a371f7" opacity="0.9" />
+              <rect x="60" y="0" width="8" height="35" rx="1" fill="#a371f7" />
+            </g>
+          </g>
+
+          {/* Issues - with completion dots */}
+          <g transform="translate(540, 0)">
+            <rect x="0" y="0" width="165" height="70" rx="8" fill="#161b22" stroke="#30363d" strokeWidth="1" />
+            <svg x="12" y="10" width="18" height="18" viewBox="0 0 16 16" fill="#f85149">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
+              <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z" />
+            </svg>
+            <text x="36" y="23" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              Issues
+            </text>
+            <text x="12" y="50" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="24" fontWeight="700">
+              156
+            </text>
+            {/* Closed vs open indicator */}
+            <g transform="translate(80, 40)">
+              <rect x="0" y="0" width="70" height="6" rx="3" fill="#21262d" />
+              <rect x="0" y="0" width="56" height="6" rx="3" fill="#3fb950" />
+            </g>
+            <text x="80" y="58" fill="#3fb950" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="9">
+              125 closed
+            </text>
+            <text x="120" y="58" fill="#f85149" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="9">
+              31 open
+            </text>
+          </g>
+
+          {/* Streak / Activity */}
+          <g transform="translate(720, 0)">
+            <rect x="0" y="0" width="155" height="70" rx="8" fill="#161b22" stroke="#f0883e" strokeWidth="1" opacity="1" />
+            {/* Fire icon with glow */}
+            <g filter="url(#glow)">
+              <svg x="12" y="8" width="22" height="22" viewBox="0 0 16 16" fill="#f0883e">
+                <path d="M9.533.753V.752c.217 2.385 1.463 3.626 2.653 4.81C13.37 6.74 14.498 7.863 14.498 10c0 3.5-3 6-6.5 6S1.5 13.512 1.5 10c0-1.298.536-2.56 1.425-3.286.376-.308.862-.238 1.12.07.258.31.243.79-.051 1.09-.494.504-.936 1.142-.936 2.126 0 2.247 1.79 4.5 4.442 4.5 2.652 0 4.5-2.253 4.5-4.5 0-1.463-.765-2.354-1.738-3.28-.972-.926-2.143-2.04-2.762-3.967Z" />
+                <path d="M8.5 3.75c.322 2.143 1.135 2.857 1.929 3.563.794.706 1.571 1.4 1.571 2.687 0 1.5-1.25 3-3 3s-3-1.5-3-3c0-.643.357-1.357.857-1.857.5-.5.643-.857.643-1.393 0-.43-.214-1.25-.5-2Z" fill="#ffdf5d" />
+              </svg>
+            </g>
+            <text x="40" y="22" fill="#f0883e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11" fontWeight="600">
+              Current Streak
+            </text>
+            <text x="12" y="50" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="24" fontWeight="700">
+              23
+            </text>
+            <text x="50" y="50" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="14">
+              days
+            </text>
+            {/* Week activity dots */}
+            <g transform="translate(12, 58)">
+              <circle cx="0" cy="0" r="4" fill="#3fb950" />
+              <circle cx="12" cy="0" r="4" fill="#3fb950" />
+              <circle cx="24" cy="0" r="4" fill="#3fb950" />
+              <circle cx="36" cy="0" r="4" fill="#3fb950" />
+              <circle cx="48" cy="0" r="4" fill="#3fb950" />
+              <circle cx="60" cy="0" r="4" fill="#3fb950" />
+              <circle cx="72" cy="0" r="4" fill="#21262d" stroke="#3fb950" strokeWidth="1" strokeDasharray="2 2">
+                <animate attributeName="opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite" />
+              </circle>
+            </g>
+          </g>
+        </g>
+
+        {/* Languages Bar */}
+        <g transform="translate(24, 145)">
+          <text x="0" y="12" fill="#8b949e" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="12">
+            Most Used Languages
+          </text>
+          <g transform="translate(0, 20)">
+            <rect x="0" y="0" width="851" height="8" rx="4" fill="#161b22" />
+            <rect x="0" y="0" width="280" height="8" rx="4" fill="#3178c6" />
+            <rect x="280" y="0" width="220" height="8" fill="#f1e05a" />
+            <rect x="500" y="0" width="170" height="8" fill="#3572A5" />
+            <rect x="670" y="0" width="100" height="8" fill="#00ADD8" />
+            <rect x="770" y="0" width="81" height="8" rx="4" fill="#e34c26" />
+          </g>
+          {/* Language labels */}
+          <g transform="translate(0, 40)">
+            <circle cx="4" cy="4" r="4" fill="#3178c6" />
+            <text x="14" y="8" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              TypeScript 33%
+            </text>
+            <circle cx="120" cy="4" r="4" fill="#f1e05a" />
+            <text x="130" y="8" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              JavaScript 26%
+            </text>
+            <circle cx="255" cy="4" r="4" fill="#3572A5" />
+            <text x="265" y="8" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              Python 20%
+            </text>
+            <circle cx="365" cy="4" r="4" fill="#00ADD8" />
+            <text x="375" y="8" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              Go 12%
+            </text>
+            <circle cx="445" cy="4" r="4" fill="#e34c26" />
+            <text x="455" y="8" fill="#c9d1d9" fontFamily="Segoe UI, Ubuntu, Sans-Serif" fontSize="11">
+              HTML 9%
+            </text>
+          </g>
+        </g>
+      </svg>
