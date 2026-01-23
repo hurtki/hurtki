@@ -1,7 +1,7 @@
 <svg
   width="900"
-  height="200"
-  viewBox="0 0 900 200"
+  height="150"
+  viewBox="0 0 900 150"
   xmlns="http://www.w3.org/2000/svg"
   role="img"
   aria-labelledby="titleId"
@@ -9,46 +9,18 @@
 >
   <title id="titleId">GitHub Stats</title>
 
-  <defs>
-    <!-- Subtle gradient for accent -->
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#3fb950" stop-opacity="0.8" />
-    </linearGradient>
-    
-    <!-- Soft glow -->
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-  </defs>
-
   <!-- Clean background -->
-  <rect width="900" height="200" fill="#0d1117" />
+  <rect width="900" height="150" fill="#0d1117" />
 
-  <!-- Header Section -->
-  <g transform="translate(40 35)">
-    <!-- Avatar placeholder circle -->
-    <circle cx="28" cy="20" r="28" fill="#21262d" />
-    <text x="28" y="26" text-anchor="middle" fill="#58a6ff" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="700">DN</text>
-    
-    <!-- Name and title -->
-    <text x="72" y="15" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="700">developer_name</text>
-    <text x="72" y="35" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="13">Full-stack Developer</text>
-  </g>
-
-  <!-- Stats Grid - Clean layout without card borders -->
-  <g transform="translate(40 80)">
+  <!-- Stats Grid - Clean layout -->
+  <g transform="translate(30 25)">
     <!-- Stars -->
     <g transform="translate(0 0)">
       <text x="0" y="0" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500">Stars</text>
-      <text x="0" y="28" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="26" font-weight="700">1,247</text>
+      <text x="0" y="26" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">1,247</text>
       <!-- Sparkline -->
       <polyline
-        points="0,45 15,42 30,47 45,38 60,43 75,35 90,40 105,32"
+        points="0,42 12,39 24,44 36,36 48,40 60,33 72,37 84,30"
         fill="none"
         stroke="#e3b341"
         stroke-width="2"
@@ -56,116 +28,123 @@
         stroke-linejoin="round"
         opacity="0.7"
       />
-      <g transform="translate(75 20)">
+      <g transform="translate(60 18)">
         <polygon points="0,6 4,0 8,6" fill="#3fb950" />
         <text x="12" y="6" fill="#3fb950" font-family="Inter, -apple-system, sans-serif" font-size="10" font-weight="600">+12%</text>
       </g>
     </g>
 
     <!-- Commits -->
-    <g transform="translate(150 0)">
+    <g transform="translate(130 0)">
       <text x="0" y="0" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500">Commits</text>
-      <text x="0" y="28" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="26" font-weight="700">3,842</text>
+      <text x="0" y="26" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">3,842</text>
       <!-- Progress ring -->
-      <g transform="translate(95 10)">
-        <circle cx="18" cy="18" r="16" fill="none" stroke="#21262d" stroke-width="3" />
+      <g transform="translate(80 8)">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="#21262d" stroke-width="3" />
         <circle
-          cx="18"
-          cy="18"
-          r="16"
+          cx="16"
+          cy="16"
+          r="14"
           fill="none"
           stroke="#3fb950"
           stroke-width="3"
           stroke-linecap="round"
-          stroke-dasharray="80"
-          stroke-dashoffset="16"
-          transform="rotate(-90 18 18)"
+          stroke-dasharray="70"
+          stroke-dashoffset="14"
+          transform="rotate(-90 16 16)"
         />
-        <text x="18" y="22" text-anchor="middle" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="600">80%</text>
+        <text x="16" y="20" text-anchor="middle" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="600">80%</text>
       </g>
-      <text x="0" y="52" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="10">goal: 4,800</text>
+      <text x="0" y="48" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="10">goal: 4,800</text>
     </g>
 
     <!-- PRs -->
-    <g transform="translate(310 0)">
+    <g transform="translate(270 0)">
       <text x="0" y="0" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500">Pull Requests</text>
-      <text x="0" y="28" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="26" font-weight="700">284</text>
+      <text x="0" y="26" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">284</text>
       <!-- Mini bar chart -->
-      <g transform="translate(70 5)">
-        <rect x="0" y="28" width="8" height="12" rx="1" fill="#a371f7" opacity="0.3" />
-        <rect x="12" y="20" width="8" height="20" rx="1" fill="#a371f7" opacity="0.5" />
-        <rect x="24" y="12" width="8" height="28" rx="1" fill="#a371f7" opacity="0.7" />
-        <rect x="36" y="4" width="8" height="36" rx="1" fill="#a371f7" />
+      <g transform="translate(55 5)">
+        <rect x="0" y="25" width="7" height="10" rx="1" fill="#a371f7" opacity="0.3" />
+        <rect x="10" y="18" width="7" height="17" rx="1" fill="#a371f7" opacity="0.5" />
+        <rect x="20" y="10" width="7" height="25" rx="1" fill="#a371f7" opacity="0.7" />
+        <rect x="30" y="3" width="7" height="32" rx="1" fill="#a371f7" />
       </g>
     </g>
 
     <!-- Issues -->
-    <g transform="translate(460 0)">
+    <g transform="translate(400 0)">
       <text x="0" y="0" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500">Issues</text>
-      <text x="0" y="28" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="26" font-weight="700">156</text>
+      <text x="0" y="26" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">156</text>
       <!-- Closed/Open bar -->
-      <g transform="translate(0 40)">
-        <rect x="0" y="0" width="100" height="4" rx="2" fill="#21262d" />
-        <rect x="0" y="0" width="80" height="4" rx="2" fill="#3fb950" />
+      <g transform="translate(0 38)">
+        <rect x="0" y="0" width="90" height="4" rx="2" fill="#21262d" />
+        <rect x="0" y="0" width="72" height="4" rx="2" fill="#3fb950" />
       </g>
-      <text x="0" y="56" fill="#3fb950" font-family="Inter, -apple-system, sans-serif" font-size="9">125 closed</text>
-      <text x="55" y="56" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="9">31 open</text>
+      <text x="0" y="52" fill="#3fb950" font-family="Inter, -apple-system, sans-serif" font-size="9">125 closed</text>
+      <text x="50" y="52" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="9">31 open</text>
     </g>
 
     <!-- Repos -->
-    <g transform="translate(600 0)">
+    <g transform="translate(530 0)">
       <text x="0" y="0" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500">Repositories</text>
-      <text x="0" y="28" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="26" font-weight="700">47</text>
-      <text x="0" y="48" fill="#58a6ff" font-family="Inter, -apple-system, sans-serif" font-size="10">12 public</text>
-      <text x="55" y="48" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="10">35 private</text>
+      <text x="0" y="26" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">47</text>
+      <text x="0" y="45" fill="#58a6ff" font-family="Inter, -apple-system, sans-serif" font-size="10">12 public</text>
+      <text x="50" y="45" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="10">35 private</text>
     </g>
 
     <!-- Streak -->
-    <g transform="translate(750 0)">
+    <g transform="translate(660 0)">
       <text x="0" y="0" fill="#f0883e" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="600">Streak</text>
-      <text x="0" y="28" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="26" font-weight="700">23</text>
-      <text x="42" y="28" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="12">days</text>
+      <text x="0" y="26" fill="#f0f6fc" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">23</text>
+      <text x="38" y="26" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="11">days</text>
       <!-- Week dots -->
-      <g transform="translate(0 40)">
+      <g transform="translate(0 38)">
         <circle cx="4" cy="4" r="4" fill="#3fb950" />
-        <circle cx="15" cy="4" r="4" fill="#3fb950" />
-        <circle cx="26" cy="4" r="4" fill="#3fb950" />
-        <circle cx="37" cy="4" r="4" fill="#3fb950" />
-        <circle cx="48" cy="4" r="4" fill="#3fb950" />
-        <circle cx="59" cy="4" r="4" fill="#3fb950" />
-        <circle cx="70" cy="4" r="4" fill="#21262d" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="3 2">
+        <circle cx="14" cy="4" r="4" fill="#3fb950" />
+        <circle cx="24" cy="4" r="4" fill="#3fb950" />
+        <circle cx="34" cy="4" r="4" fill="#3fb950" />
+        <circle cx="44" cy="4" r="4" fill="#3fb950" />
+        <circle cx="54" cy="4" r="4" fill="#3fb950" />
+        <circle cx="64" cy="4" r="4" fill="#21262d" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="3 2">
           <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite" />
         </circle>
       </g>
     </g>
+
+    <!-- Top % -->
+    <g transform="translate(780 0)">
+      <text x="0" y="0" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500">Ranking</text>
+      <text x="0" y="26" fill="#3fb950" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">Top 15%</text>
+      <text x="0" y="45" fill="#7d8590" font-family="Inter, -apple-system, sans-serif" font-size="10">of developers</text>
+    </g>
   </g>
 
   <!-- Languages - minimal style -->
-  <g transform="translate(40 170)">
+  <g transform="translate(30 100)">
     <!-- Progress bar -->
-    <rect x="0" y="0" width="820" height="4" rx="2" fill="#21262d" />
-    <rect x="0" y="0" width="270" height="4" rx="2" fill="#3178c6" />
-    <rect x="270" y="0" width="213" height="4" fill="#f1e05a" />
-    <rect x="483" y="0" width="164" height="4" fill="#3572A5" />
-    <rect x="647" y="0" width="98" height="4" fill="#00ADD8" />
-    <rect x="745" y="0" width="75" height="4" rx="2" fill="#e34c26" />
+    <rect x="0" y="0" width="840" height="4" rx="2" fill="#21262d" />
+    <rect x="0" y="0" width="277" height="4" rx="2" fill="#3178c6" />
+    <rect x="277" y="0" width="218" height="4" fill="#f1e05a" />
+    <rect x="495" y="0" width="168" height="4" fill="#3572A5" />
+    <rect x="663" y="0" width="101" height="4" fill="#00ADD8" />
+    <rect x="764" y="0" width="76" height="4" rx="2" fill="#e34c26" />
     
     <!-- Labels -->
-    <g transform="translate(0 18)">
-      <circle cx="4" cy="4" r="4" fill="#3178c6" />
-      <text x="14" y="8" fill="#c9d1d9" font-family="Inter, -apple-system, sans-serif" font-size="11">TypeScript 33%</text>
+    <g transform="translate(0 16)">
+      <circle cx="4" cy="4" r="3" fill="#3178c6" />
+      <text x="12" y="7" fill="#8b949e" font-family="Inter, -apple-system, sans-serif" font-size="10">TypeScript 33%</text>
       
-      <circle cx="130" cy="4" r="4" fill="#f1e05a" />
-      <text x="140" y="8" fill="#c9d1d9" font-family="Inter, -apple-system, sans-serif" font-size="11">JavaScript 26%</text>
+      <circle cx="120" cy="4" r="3" fill="#f1e05a" />
+      <text x="128" y="7" fill="#8b949e" font-family="Inter, -apple-system, sans-serif" font-size="10">JavaScript 26%</text>
       
-      <circle cx="270" cy="4" r="4" fill="#3572A5" />
-      <text x="280" y="8" fill="#c9d1d9" font-family="Inter, -apple-system, sans-serif" font-size="11">Python 20%</text>
+      <circle cx="245" cy="4" r="3" fill="#3572A5" />
+      <text x="253" y="7" fill="#8b949e" font-family="Inter, -apple-system, sans-serif" font-size="10">Python 20%</text>
       
-      <circle cx="385" cy="4" r="4" fill="#00ADD8" />
-      <text x="395" y="8" fill="#c9d1d9" font-family="Inter, -apple-system, sans-serif" font-size="11">Go 12%</text>
+      <circle cx="345" cy="4" r="3" fill="#00ADD8" />
+      <text x="353" y="7" fill="#8b949e" font-family="Inter, -apple-system, sans-serif" font-size="10">Go 12%</text>
       
-      <circle cx="475" cy="4" r="4" fill="#e34c26" />
-      <text x="485" y="8" fill="#c9d1d9" font-family="Inter, -apple-system, sans-serif" font-size="11">HTML 9%</text>
+      <circle cx="420" cy="4" r="3" fill="#e34c26" />
+      <text x="428" y="7" fill="#8b949e" font-family="Inter, -apple-system, sans-serif" font-size="10">HTML 9%</text>
     </g>
   </g>
 </svg>
